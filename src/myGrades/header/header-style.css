@@ -1,0 +1,51 @@
+:root {
+    --gBlue: #0099ff;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header .navbar-info {
+    display: flex;
+    height: 70px;
+    background: var(--gBlue);
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+header .navbar-info:hover {
+    height: 80px;
+}
+
+header .navbar-info #navbar-text {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 300ms;
+}
+
+header .navbar-info:hover #navbar-text {
+    font-size: 50px;
+}
+
+.custom-shape-divider-top-1638018139 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1638018139 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1638018139 .shape-fill {
+    fill: #0099FF;
+}

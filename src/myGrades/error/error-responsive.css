@@ -1,0 +1,11 @@
+@media screen and (max-width: 319px) {
+    .error .error-info .error-status {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .error .error-info .error-status {
+        flex-direction: column;
+    }
+}

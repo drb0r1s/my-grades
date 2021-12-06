@@ -1,0 +1,274 @@
+:root {
+    --gBlue: #0099ff;
+}
+
+.grades {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grades .grades-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grades .grades-holder h1 {
+    color: black;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.grades .grades-holder form {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.grades .grades-holder form input {
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--gBlue);
+    outline: none;
+    padding: 2px 3px;
+    transition: 500ms;
+}
+
+.grades .grades-holder form input:focus {
+    border: 1px dashed var(--gBlue);
+}
+
+.grades .grades-holder button {
+    color: var(--gBlue);
+    font-size: 15px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid white;
+    padding: 3px 5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.grades .grades-holder button:hover {
+    color: white;
+    background: var(--gBlue);
+    border: 1px dashed var(--gBlue);
+}
+
+.grades .grades-holder .subject-holder {
+    display: flex;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 5px 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.grades .grades-holder .subject-holder h2 {
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.grades .grades-holder .subject-holder p {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    padding: 3px 5px;
+}
+
+.grades .grades-holder .subject-holder .subject {
+    display: flex;
+    width: 600px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.grades .grades-holder .subject-holder .subject .subject-info {
+    width: 320px;
+}
+
+.grades .grades-holder .subject-holder .subject .subject-info strong {
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.grades .grades-holder .subject-holder .subject .subject-info #grade {
+    display: inline;
+    color: var(--gBlue);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.grades .grades-holder .subject-holder .subject #grades-btn {
+    color: var(--gBlue);
+    font-size: 18px;
+    background: transparent;
+    border: 1px dashed white;
+    padding: 3px 5px;
+    transition: 300ms;
+}
+
+.grades .grades-holder .subject-holder .subject #grades-btn:hover {
+    color: white;
+    background: var(--gBlue);
+}
+
+.grades .grades-holder .subject-holder .subject #moderation button {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
+.grades .grades-holder .subject-holder strong {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 5px;
+}
+
+.grades .grades-holder .subject-holder strong span {
+    color: var(--gBlue);
+}
+
+.grades .grades-holder .subject-holder #remove-all-btn {
+    color: red;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 3px 5px;
+    transition: 300ms;
+}
+
+.grades .grades-holder .subject-holder #remove-all-btn:hover {
+    color: white;
+    background: red;
+    border: 1px dashed white;
+}
+
+.grade-dashboard {
+    display: flex;
+    height: 400px;
+    width: 750px;
+    background: white;
+    border: 3px dashed var(--gBlue);
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.5); 
+    box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.5);
+    margin-top: -200px;
+    margin-left: -375px;
+    padding: 20px 0;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 90;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.grade-dashboard:hover {
+    -webkit-box-shadow: 0px 15px 15px 3px rgba(0,0,0,0.6); 
+    box-shadow: 0px 15px 15px 3px rgba(0,0,0,0.6);
+}
+
+.grade-dashboard strong {
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grade-dashboard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grade-dashboard form .inputs-holder {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grade-dashboard form .inputs-holder input {
+    height: 100px;
+    width: 100px;
+    color: var(--gBlue);
+    font-size: 50px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    transition: 300ms;
+}
+
+.grade-dashboard form .inputs-holder input:focus {
+    outline: none;
+    border: 1px dashed var(--gBlue);
+}
+
+.grade-dashboard form .inputs-holder input::-webkit-outer-spin-button,
+.grade-dashboard form .inputs-holder input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.grade-dashboard form button {
+    color: var(--gBlue);
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px dashed var(--gBlue);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.grade-dashboard form button:hover {
+    color: white;
+    background: var(--gBlue);
+}
+
+#visible {
+    top: 0;
+    opacity: 1;
+}
+
+#visible-dashboard {
+    top: 50%;
+    opacity: 1;
+}

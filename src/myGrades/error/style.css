@@ -1,0 +1,81 @@
+:root {
+    --gBlue: #0099FF;
+}
+
+.error {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error .error-info h1 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.error .error-info .error-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error .error-info .error-status p {
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.error .error-info .error-status strong {
+    width: 210px;
+    color: var(--gBlue);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+
+.error .error-info .error-status strong::after {
+    content: "_";
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.error .error-info .button {
+    display: block;
+    width: 100px;
+    color: var(--gBlue);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid var(--gBlue);
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 5px 10px;
+    transition: 300ms;
+}
+
+.error .error-info .button:hover {
+    color: white;
+    background: var(--gBlue);
+    border: 1px dashed white;
+}

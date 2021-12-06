@@ -1,0 +1,221 @@
+:root {
+    --gBlue: #0099FF;
+}
+
+.schedule {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule .schedule-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule h1 {
+    color: black;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.schedule .schedule-holder .day {
+    display: flex;
+    margin: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule .schedule-holder .day h2 {
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.schedule .schedule-holder .day .day-schedule {
+    display: flex;
+    border: 3px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.schedule .schedule-holder .day .day-schedule .subject {
+    display: flex;
+    width: 300px;
+    margin: 10px 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.schedule .schedule-holder .day .day-schedule .subject p {
+    color: black;
+    font-size: 18px;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+
+.schedule .schedule-holder .day .day-schedule .subject strong {
+    display: block;
+    color: var(--gBlue);
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.schedule .schedule-holder .day button {
+    color: var(--gBlue);
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gBlue);
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 10px;
+    transition: 300ms;
+}
+
+.schedule .schedule-holder .day button:hover {
+    color: white;
+    background: var(--gBlue);
+}
+
+.dashboard {
+    display: flex;
+    height: 550px;
+    width: 500px;
+    background: white;
+    border: 3px dashed var(--gBlue);
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.5); 
+    box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.5);
+    margin-top: -275px;
+    margin-left: -250px;
+    padding: 10px 15px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 90;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.dashboard:hover {
+    -webkit-box-shadow: 0px 15px 15px 3px rgba(0,0,0,0.6); 
+    box-shadow: 0px 15px 15px 3px rgba(0,0,0,0.6);
+}
+
+.dashboard h3 {
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.dashboard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard form .inputs-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard form .inputs-holder .subject-input p {
+    display: inline;
+    color: var(--gBlue);
+    font-size: 18px;
+}
+
+.dashboard form .inputs-holder .subject-input input {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin: 10px;
+    padding: 5px 10px;
+    transition: 500ms;
+}
+
+.dashboard form .inputs-holder .subject-input button {
+    color: var(--gBlue);
+    font-size: 15px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gBlue);
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 3px 5px;
+    transition: 300ms;
+}
+
+.dashboard form .inputs-holder .subject-input button:hover {
+    color: white;
+    background: var(--gBlue);
+}
+
+.dashboard form .inputs-holder .subject-input input:focus {
+    color: var(--gBlue);
+    border: 1px dashed var(--gBlue);
+}
+
+.dashboard form .button-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard form .button-holder button {
+    color: var(--gBlue);
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gBlue);
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 10px;
+    transition: 300ms;
+}
+
+.dashboard form .button-holder button:hover {
+    color: white;
+    background: var(--gBlue);
+}
+
+#visible {
+    opacity: 1;
+    top: 0;
+}
+
+#visible-dashboard {
+    opacity: 1;
+    top: 50%;
+}

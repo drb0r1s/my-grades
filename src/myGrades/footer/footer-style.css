@@ -1,0 +1,54 @@
+:root {
+    --gBlue: #0099FF;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer .footer-holder {
+    display: flex;
+    background: var(--gBlue);
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-holder a img {
+    height: 50px;
+    width: auto;
+    transition: 300ms;
+}
+
+footer:hover .footer-holder a img {
+    height: 75px;
+    width: auto;
+}
+
+footer .footer-holder strong {
+    color: white;
+    font-size: 15px;
+}
+
+.custom-shape-divider-bottom-1638372230 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1638372230 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1638372230 .shape-fill {
+    fill: var(--gBlue);
+}

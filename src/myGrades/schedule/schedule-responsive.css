@@ -1,0 +1,67 @@
+@media screen and (max-width: 319px) {
+    .schedule .schedule-holder .day .day-schedule .subject {
+        width: 230px;
+    }
+
+    .schedule .schedule-holder .day .day-schedule .subject strong {
+        font-size: 15px;
+    }
+    
+    .dashboard {
+        width: 200px;
+        margin-left: -118px;
+        overflow: scroll;
+    }
+
+    .dashboard form .inputs-holder .subject-input input {
+        width: 150px;
+    }
+    
+    .dashboard form .inputs-holder .subject-input button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .dashboard form .button-holder {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .dashboard form .button-holder button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .dashboard {
+        width: 300px;
+        margin-left: -169px;
+        overflow: scroll;
+    }
+
+    .dashboard form .inputs-holder .subject-input input {
+        width: 230px;
+    }
+    
+    .dashboard form .inputs-holder .subject-input button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .dashboard form .button-holder {
+        margin-top: 20px;
+    }
+
+    .dashboard form .button-holder button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .dashboard {
+        width: 430px;
+        margin-left: -235px;
+    }
+}

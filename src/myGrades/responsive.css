@@ -1,0 +1,111 @@
+@media screen and (max-width: 319px) {
+    .app .app-holder {
+        height: 150px;
+        width: 250px;
+    }
+
+    .app .app-holder:hover {
+        height: 175px;
+        width: 275px;
+    }
+
+    .app .app-holder h1 {
+        font-size: 25px;
+    }
+
+    .app .app-holder:hover h1 {
+        font-size: 30px;
+    }
+
+    .app .app-holder .btn {
+        font-size: 15px;
+    }
+
+    .app .app-holder:hover .btn {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .app .app-holder {
+        height: 175px;
+        width: 250px;
+    }
+
+    .app .app-holder:hover {
+        height: 200px;
+        width: 275px;
+    }
+
+    .app .app-holder h1 {
+        font-size: 30px;
+    }
+
+    .app .app-holder:hover h1 {
+        font-size: 35px;
+    }
+
+    .app .app-holder .btn {
+        font-size: 20px;
+    }
+
+    .app .app-holder:hover .btn {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .app .app-holder {
+        height: 200px;
+        width: 375px;
+    }
+
+    .app .app-holder:hover {
+        height: 225px;
+        width: 400px;
+    }
+
+    .app .app-holder h1 {
+        font-size: 40px;
+    }
+
+    .app .app-holder:hover h1 {
+        font-size: 45px;
+    }
+
+    .app .app-holder .btn {
+        font-size: 20px;
+    }
+
+    .app .app-holder:hover .btn {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .app .app-holder {
+        height: 350px;
+        width: 600px;
+    }
+
+    .app .app-holder:hover {
+        height: 375px;
+        width: 625px;
+    }
+
+    .app .app-holder h1 {
+        font-size: 60px;
+    }
+
+    .app .app-holder:hover h1 {
+        font-size: 70px;
+    }
+
+    .app .app-holder .btn {
+        font-size: 30px;
+    }
+
+    .app .app-holder:hover .btn {
+        font-size: 40px;
+    }
+}

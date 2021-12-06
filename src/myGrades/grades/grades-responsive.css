@@ -1,0 +1,149 @@
+@media screen and (max-width: 319px) {
+    .grades .grades-holder form {
+        flex-direction: column;
+    }
+
+    .grades .grades-holder form input {
+        width: 200px;
+    }
+
+    .grades .grades-holder button {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    
+    .grades .grades-holder .subject-holder {
+        padding: 5px;
+    }
+    
+    .grades .grades-holder .subject-holder .subject {
+        width: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info strong {
+        font-size: 17px;
+    }
+    
+    .grades .grades-holder .subject-holder .subject .subject-info #grade {
+        font-size: 20px;
+    }
+
+    .grades .grades-holder .subject-holder .subject #grades-btn,
+    .grades .grades-holder .subject-holder .subject #moderation button {
+        margin: 5px 0;
+    }
+
+    .grade-dashboard {
+        width: 240px;
+        margin-left: -125px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .grade-dashboard strong {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .grades .grades-holder form {
+        flex-direction: column;
+    }
+
+    .grades .grades-holder form input {
+        width: 250px;
+    }
+
+    .grades .grades-holder button {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    
+    .grades .grades-holder .subject-holder {
+        padding: 5px;
+    }
+    
+    .grades .grades-holder .subject-holder .subject {
+        width: 275px;
+        flex-wrap: wrap;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info strong {
+        font-size: 23px;
+    }
+    
+    .grades .grades-holder .subject-holder .subject .subject-info #grade {
+        font-size: 20px;
+    }
+
+    .grades .grades-holder .subject-holder .subject #grades-btn,
+    .grades .grades-holder .subject-holder .subject #moderation button {
+        margin: 10px 0;
+    }
+
+    .grade-dashboard {
+        width: 300px;
+        margin-left: -155px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .grade-dashboard strong {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .grades .grades-holder .subject-holder .subject {
+        width: 350px;
+        flex-wrap: wrap;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grades .grades-holder .subject-holder .subject .subject-info strong {
+        font-size: 25px;
+    }
+    
+    .grades .grades-holder .subject-holder .subject .subject-info #grade {
+        font-size: 20px;
+    }
+
+    .grade-dashboard {
+        width: 350px;
+        margin-left: -175px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .grade-dashboard strong {
+        display: block;
+        margin: 0 auto;
+    }
+}
