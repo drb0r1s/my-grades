@@ -1,7 +1,7 @@
 # My Grades
 
 - **My Grades** provides the ability to record *subjects* and *grades* as well as *calculate the average grade* of individual subjects and all subjects together.
-- It also provides the ability to enter a **schedule**.
+- It also provides the ability to make a **schedule**.
 
 ## Author
 
